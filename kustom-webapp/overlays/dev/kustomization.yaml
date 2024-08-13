@@ -1,0 +1,9 @@
+bases:
+- ../../base
+
+patches:
+- path: replicas.yaml
+
+configMapGenerator:
+- name: mykustom-map
+  env: config.properties
